@@ -20,3 +20,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ### `npm install`
 
 npm i mdbreact
+npm i react-router-dom
