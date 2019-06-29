@@ -6,7 +6,7 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {Test : ""};
+    this.state = {Test : []};
   }
 
   componentDidMount() {
@@ -158,11 +158,7 @@ class App extends Component {
     },
     {
         "id": 37,
-        "title": "นักดนตรี"
-    },
-    {
-        "id": 38,
-        "title": "ชอบสะสมของเก่าของโบราณ"
+        "title": "เป็นช่างซ่อมบำรุงต่างๆ"
     },
     {
         "id": 38,
@@ -236,13 +232,21 @@ class App extends Component {
   ]})
   }
 
+  handleSUbmit(){
+      console.log();
+  }
+
   render() {
     return (
       <div>
-        <TestList Test={this.state.Test} />
+          <form>
+            <TestList question={this.state.Test} />
+            <button type="submit" onClick={()=>this.handleSUbmit()}>Submit</button>
+        </form>
       </div>
-    );
+      
+    )
   }
 }
 
-export default App;
+export default App

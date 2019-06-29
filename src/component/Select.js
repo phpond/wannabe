@@ -1,32 +1,48 @@
-import React from 'react';
-
-
+import React from "react";
 
 class Select extends React.Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      answer: ""
+    };
+  }
 
   
+
   render() {
     return (
-
-
-<form>
+      <div>
         <label className="radio-inline">
-          <input type="radio" name="optradio" defaultChecked />A
+          <input
+            type="radio"
+            name={`${this.props.questionId}`}
+            
+            onChange={() => this.props.setAnswer(this.props.questionId)}
+          />
+          A
         </label>
         <label className="radio-inline">
-          <input type="radio" name="optradio" />B
+          <input
+            type="radio"
+            name={`${this.props.questionId}`}
+            
+            onChange={() => this.props.setAnswer(this.props.questionId)}
+          />
+          B
         </label>
         <label className="radio-inline">
-          <input type="radio" name="optradio" />X
+          <input
+            type="radio"
+            name={`${this.props.questionId}`}
+            
+            onChange={() => this.props.setAnswer(this.props.questionId)}
+          />
+          X
         </label>
-      </form>
-
-
-      );
-    }
+      </div>
+    );
   }
- 
-
+}
 
 export default Select;
