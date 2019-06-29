@@ -1,12 +1,13 @@
-import React from 'react';
-
-
+import React from "react";
 
 class Select extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {value: "2"};
+    this.state = {
+      answer: ""
+    };
+  }
 
     this.handleChange = this.handleChange.bind(this);
   }
@@ -15,33 +16,44 @@ class Select extends React.Component {
     this.setState({value: event.target.value});
   }
   
+
   render() {
     const { value } = this.state;
 
 
     return (
-
-
-<form>
+      <div>
         <label className="radio-inline">
-          <input type="radio" name="optradio" defaultValue="2" defaultChecked onChange={this.handleChange}/>A
+
+          <input
+            type="radio"
+            name={`${this.props.questionId}`}
+            
+            onChange={() => this.props.setAnswer(this.props.questionId)}
+          />
+          A
         </label>
         <label className="radio-inline">
-          <input type="radio" name="optradio" defaultValue="1" onChange={this.handleChange}/>B
+          <input
+            type="radio"
+            name={`${this.props.questionId}`}
+            
+            onChange={() => this.props.setAnswer(this.props.questionId)}
+          />
+          B
         </label>
         <label className="radio-inline">
-          <input type="radio" name="optradio" defaultValue="0" onChange={this.handleChange}/>X
+          <input
+            type="radio"
+            name={`${this.props.questionId}`}
+            
+            onChange={() => this.props.setAnswer(this.props.questionId)}
+          />
+          X
         </label>
-
-        <h2>Rating from state: {value}</h2>
-
-      </form>
-
-
-      );
-    }
+      </div>
+    );
   }
- 
-
+}
 
 export default Select;
