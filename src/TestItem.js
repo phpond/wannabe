@@ -9,14 +9,12 @@ class TestItem extends Component {
     }
 
     render() {
-        const {productName, unitPrice, thumbnail} = this.props.product;
+        const {id, title} = this.props.Test;
         return (
             <div className="col-md-3 col-sm-6">
-                <img className="img-fluid img-thumbnail" src={thumbnail} />
-                <h5 className="mt-2">{productName}</h5>
-                <p className="title text-right" >{unitPrice} THB</p>
+                <h5 className="mt-2">{id}  {title} <Select /></h5>
                 
-                <Select />
+                
             </div>
         )
     }

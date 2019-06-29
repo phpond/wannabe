@@ -4,9 +4,9 @@ import TestItem from "./TestItem";
 class TestList extends Component {
   showProducts() {
     return (
-      this.props.products &&
-      this.props.products.map(product => (
-        <TestItem key={product.productId} product={product}  />
+      this.props.Test &&
+      this.props.Test.map(Test => (
+        <TestItem key={Test.title} Test={Test}  />
       ))
     );
   }

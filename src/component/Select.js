@@ -12,13 +12,13 @@ class Select extends React.Component {
 
 <form>
         <label className="radio-inline">
-          <input type="radio" name="optradio" defaultChecked />Option 1
+          <input type="radio" name="optradio" defaultChecked />A
         </label>
         <label className="radio-inline">
-          <input type="radio" name="optradio" />Option 2 
+          <input type="radio" name="optradio" />B
         </label>
         <label className="radio-inline">
-          <input type="radio" name="optradio" />Option 3
+          <input type="radio" name="optradio" />X
         </label>
       </form>
 
