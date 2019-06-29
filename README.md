@@ -19,6 +19,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm install`
 
-npm install react-star-rating-component --save
-
-
+npm i react-bootstrap
