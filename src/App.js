@@ -240,17 +240,23 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        {/* <div class="fullscreen-block"> */}
+      
+        <div>
+<div class="header">
+  <h1>WHAT</h1>
+  <p>WILL I BE .....</p>
+</div>
         <form>
           <TestList question={this.state.Test} />
+          <center>
           <Button
             variant="warning"
             type="submit"
+            size="lg" block
             onClick={() => this.handleSubmit()}
           >
             Submit
-          </Button>
+          </Button> </center>
         </form>
       </div>
     );

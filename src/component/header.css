@@ -11,10 +11,38 @@
 
   background-image: url('http://www.leny-svitidla.cz/wp-content/uploads/2017/01/bgleny3.jpg');
 background-repeat: no-repeat;
-background-position: center center;
+/* background-position: center center; */
 background-attachment: fixed;
--o-background-size: 100% 100%, auto;
+/* -o-background-size: 100% 100%, auto;
 -moz-background-size: 100% 100%, auto;
 -webkit-background-size: 100% 100%, auto;
-background-size: 100% 100%, auto;
+background-size: 100% 100%, auto; */
+
   }
+
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+
+  .h1, .h3, .h4, .h5, .h6 {
+    font-family: 'Kanit', sans-serif;
+    
+  }
+  h2 {
+    width:700px;
+    margin: auto;
+    border: 1px solid orange;
+  }
+  
+body
+{
+    margin: 20;
+    padding: 20;
+    font-family: 'Kanit', sans-serif;
+    background: #FFFF99;
+    
+}

@@ -14,7 +14,7 @@ const Select = (props) => {
             }])}
             required
           />
-          A
+          ชอบมาก
         </label>
         <label className="radio-inline">
           <input
@@ -27,7 +27,7 @@ const Select = (props) => {
             }])}
             required
           />
-          B
+          ไม่ค่อยชอบ
         </label>
         <label className="radio-inline">
           <input
@@ -40,7 +40,7 @@ const Select = (props) => {
             }])}
             required
           />
-          X
+          ไม่ชอบเลย
         </label>
       </div>
     )
