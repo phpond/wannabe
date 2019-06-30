@@ -247,7 +247,7 @@ class App extends Component {
   <p>WILL I BE .....</p>
 </div>
         <form>
-          <TestList question={this.state.Test} />
+          <TestList question={this.state.Test} /> <br />>
           <center>
           <Button
             variant="warning"
@@ -256,7 +256,7 @@ class App extends Component {
             onClick={() => this.handleSubmit()}
           >
             Submit
-          </Button> </center>
+          </Button> </center> <br />
         </form>
       </div>
     );
