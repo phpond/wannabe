@@ -236,7 +236,8 @@ class App extends Component {
   }
 
   handleSUbmit(){
-      console.log();
+      console.log("This is handleSubmit");
+      
   }
 
   render() {

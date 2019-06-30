@@ -24,18 +24,19 @@ class Select extends React.Component {
 
           <input
             type="radio"
+            value="2"
             name={`${this.props.questionId}`}
-            
-            onChange={() => this.props.setAnswer(this.props.questionId)}
+            onChange={() => this.props.setAnswer(this.props.questionId, this.state.answer = "2")}
           />
           A
         </label>
         <label className="radio-inline">
           <input
             type="radio"
+            value="1"
             name={`${this.props.questionId}`}
             
-            onChange={() => this.props.setAnswer(this.props.questionId)}
+            onChange={() => this.props.setAnswer(this.props.questionId,this.state.answer = "1")}
           />
           B
         </label>
@@ -43,8 +44,8 @@ class Select extends React.Component {
           <input
             type="radio"
             name={`${this.props.questionId}`}
-            
-            onChange={() => this.props.setAnswer(this.props.questionId)}
+            value="0"
+            onChange={() => this.props.setAnswer(this.props.questionId,this.state.answer = "0")}
           />
           X
         </label>
