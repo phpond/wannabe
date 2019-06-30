@@ -1,21 +1,20 @@
-import React, { Component } from "react";
-import TestItem from "./TestItem";
+import React, {useState, useEffect} from "react"
+import TestItem from "./TestItem"
 
-class TestList extends Component {
-  showProducts() {
-    return (
-      this.props.question.map(Test => (
-        <TestItem key={Test.title} Test={Test}  />
-      ))
-    );
-  }
+const TestList = (props) => {
+    const [listAnswer, setListAnswer] = useState([])
 
-  render() {
-    console.log(this.props)
+    const 
+
     return (
-      <div className="row">{this.showProducts()}</div>
+      <div className="row">
+        {
+          props.question.map((test, index) => (
+            <TestItem key={index} title={test.title} id={test.id} setListAnswer={setListAnswer} listAnswer={listAnswer} />
+          ))
+        }
+      </div>
     )
-  }
 }
 
-export default TestList;
+export default TestList

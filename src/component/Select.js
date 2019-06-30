@@ -1,32 +1,18 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
-class Select extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      answer: ""
-    };
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
-  
-
-  render() {
-    const { value } = this.state;
-
-
+const Select = (props) => {
     return (
       <div>
         <label className="radio-inline">
-
           <input
             type="radio"
             value="2"
-            name={`${this.props.questionId}`}
-            onChange={() => this.props.setAnswer(this.props.questionId, this.state.answer = "2")}
+            name={`${props.id}`}
+            onChange={() => props.setListAnswer([...props.listAnswer, {
+              id: props.id,
+              answerValue: "2"
+            }])}
+            required
           />
           A
         </label>
@@ -34,24 +20,30 @@ class Select extends React.Component {
           <input
             type="radio"
             value="1"
-            name={`${this.props.questionId}`}
-            
-            onChange={() => this.props.setAnswer(this.props.questionId,this.state.answer = "1")}
+            name={`${props.id}`}
+            onChange={() => props.setListAnswer([...props.listAnswer, {
+              id: props.id,
+              answerValue: "1"
+            }])}
+            required
           />
           B
         </label>
         <label className="radio-inline">
           <input
             type="radio"
-            name={`${this.props.questionId}`}
+            name={`${props.id}`}
             value="0"
-            onChange={() => this.props.setAnswer(this.props.questionId,this.state.answer = "0")}
+            onChange={() => props.setListAnswer([...props.listAnswer, {
+              id: props.id,
+              answerValue: "0"
+            }])}
+            required
           />
           X
         </label>
       </div>
-    );
-  }
+    )
 }
 
-export default Select;
+export default Select
