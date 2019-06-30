@@ -1,6 +1,9 @@
 import './App.css'
 import React, { Component } from 'react';
 import TestList from "./TestList";
+import './component/header.css';
+import { Button , Card } from 'react-bootstrap';
+
 
 class App extends Component {
 
@@ -238,10 +241,15 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-          <form>
+      <div class="fullscreen-block">
+          {/* <Header /> */}
+
+
+
+
+          <form >
             <TestList question={this.state.Test} />
-            <button type="submit" onClick={()=>this.handleSUbmit()}>Submit</button>
+            <Button  variant="warning" type="submit" onClick={()=>this.handleSUbmit()}>Submit</Button >
         </form>
       </div>
       

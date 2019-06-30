@@ -1,0 +1,20 @@
+/* .fullscreen-block{
+    background: #006699 url('https://i.imgur.com/f4S16nY.jpg') no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  } */
+
+  .fullscreen-block{
+
+
+  background-image: url('http://www.leny-svitidla.cz/wp-content/uploads/2017/01/bgleny3.jpg');
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+-o-background-size: 100% 100%, auto;
+-moz-background-size: 100% 100%, auto;
+-webkit-background-size: 100% 100%, auto;
+background-size: 100% 100%, auto;
+  }
